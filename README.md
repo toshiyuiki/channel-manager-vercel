@@ -10,4 +10,6 @@ https://github.com/toshiyuiki/channel-manager
 https://test-app-two-ivory.vercel.app/
 
 ログインからアカウントを作成してログイン。  
-チャンネル一覧からYoutubeチャンネルのURLを入力するとチャンネル情報と動画を取得します。
+チャンネル一覧からYoutubeチャンネルのURLを入力するとチャンネル情報と動画を取得します。  
+
+※動作が重いので、admin / pass でログインしてお試し可能。
