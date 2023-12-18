@@ -1,0 +1,9 @@
+{
+  "_hash": "rwbxS905ya",
+  "project": {
+    "rootDir": "C:/xampp/htdocs/docker/youtube/base/front"
+  },
+  "versions": {
+    "nuxt": "3.8.2"
+  }
+}

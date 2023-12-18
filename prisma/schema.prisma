@@ -1,0 +1,51 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+    provider = "prisma-client-js"
+    //Vercel
+    //output   = "./generated/client"
+}
+
+datasource db {
+    provider = "postgresql"
+
+    //front
+    url      = env("DATABASE_URL")
+
+    //Vercel
+    //url = env("POSTGRES_PRISMA_URL")
+    //directUrl = env("POSTGRES_URL_NON_POOLING")
+}
+
+model user {
+    id Int @id @default(autoincrement())
+    user_name String
+    user_pass String
+    created_at DateTime @default(now())
+    updated_at DateTime? @updatedAt
+}
+
+model channel {
+    id Int @id @default(autoincrement())
+    user_name String?
+    channel_id String?
+    channel_name String?
+    channel_thumb String?
+    channel_tag String?
+    created_at DateTime @default(now())
+    updated_at DateTime? @updatedAt
+}
+
+model video {
+    id Int @id @default(autoincrement())
+    user_name String?
+    channel_id String?
+    video_id String?
+    video_tag String?
+    video_title String?
+    video_thumb String?
+    video_post DateTime?
+    created_at DateTime @default(now())
+    updated_at DateTime? @updatedAt
+}
