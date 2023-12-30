@@ -29,7 +29,7 @@ export default defineEventHandler(async (e) => {
                 channel_id : ch.channel_id,
                 user_name : u.user_name,
                 video_id : v.link,
-                video_tag : v.value,
+                video_tag : ch.channel_tag,
                 video_title : v.title,
                 video_thumb : v.enclosure.thumbnail,
                 video_post : time.toISOString()
